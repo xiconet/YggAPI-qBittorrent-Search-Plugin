@@ -51,13 +51,13 @@ class yggapi(object):
                 result = {
                     "link": f"{self.url}/torrent/{torrent['id']}/download?passkey={self.passkey}",
                     "name": torrent["title"],
-                    "size": torrent["size"],
                     "seeds": torrent["seeders"],
                     "leech": torrent["leechers"],
                     "engine_url": self.url,
                     "desc_link": torrent["link"],
                     "pub_date": int(datetime.strptime(torrent["uploaded_at"], "%Y-%m-%dT%H:%M:%S%z").timestamp())
                 }
+                result["size"] = str(torrent["size"])
 
                 prettyPrinter(result)
 
