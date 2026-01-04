@@ -23,3 +23,5 @@ Or, manually copy the `yggapi.py` & `yggapi.ico` files to the following location
 - Linux: `~/.local/share/qBittorrent/nova3/engines/`
 
 _Yarrr!_
+
+Note: this fork fixes the display of torrent sizes on qBittorrent 4
